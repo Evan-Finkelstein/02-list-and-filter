@@ -52,6 +52,7 @@
   align-items: center;
   margin: 10px;
   border: black solid 1px;
+  border-radius: 5px;
 }
 
 .section{
@@ -68,9 +69,15 @@
   align-items: center;
 }
 .header{
+  font-size: 1.7em;
+  font-family: monospace;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: 50px;
+}
+.drop{
+  display: block;
 }
