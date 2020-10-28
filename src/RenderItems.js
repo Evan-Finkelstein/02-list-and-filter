@@ -34,7 +34,7 @@ export default class RenderItems extends Component {
         return (
 
             <>
-                <h1>
+                <section>
                     <select onChange={this.handleChange}>
                         <option value=''>Show All</option>
                         {this.keySet.map(option =>
@@ -42,7 +42,7 @@ export default class RenderItems extends Component {
                         {this.hornSet.map(option =>
                             <option value={option}>{option} horns</option>)}
 
-                    </select></h1>
+                    </select></section>
 
                 {/* {/* <p className='drop'>
                     <select onChange={this.handleChange} >
@@ -72,14 +72,14 @@ export default class RenderItems extends Component {
 
                 {
                     filteredAnimals.map(animal =>
-                        <Item
+                        <p> <Item
                             url={animal.url}
                             title={animal.title}
                             description={animal.description}
                             keyword={animal.keyword}
                             horns={animal.horns}
 
-                        />)
+                        /></p>)
                 }
             </>
         )
